@@ -513,10 +513,10 @@
 
 .button {
     width: 172px;   
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
     text-decoration: none;
     gap: 15px;
     background-color: #000000;
@@ -526,6 +526,7 @@
     border: none;
     cursor: pointer;
     transition: 400ms;
+    margin-bottom: 50px;
   }
   
   .button .text {
@@ -550,3 +551,41 @@
   .button:hover svg path {
     fill: #181717;
   }
+
+
+
+  /* Media queries */
+@media (max-width: 480px) {
+    .bg-image {
+      display: none;
+    }
+  
+    .slider-container {
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 10px;
+    }
+    .slider {
+      width: 100%;
+    }
+  
+    .selection-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .slider-question,
+    .slider-instruction {
+      font-size: 14px;
+    }
+  
+    .selection-question {
+      font-size: 18px;
+    }
+  }
+  
